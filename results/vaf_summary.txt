@@ -1,0 +1,37 @@
+Subjects: 20
+Cycles  : 99
+V matrix: (12, 9900)
+
+Clark 2010 dual VAF criterion (page 3)
+  primary: smallest k with global VAF >= 0.90
+           AND min per-muscle VAF >= 0.90
+
+Chosen k          : 4
+Global VAF        : 0.9337
+Min per-muscle VAF: 0.5954
+Frobenius err     : 9.4427
+Init              : nndsvda (seed=0)
+
+Per-muscle VAF at chosen k:
+  VL  : 0.9927
+  RF  : 0.6181
+  VM  : 0.9991
+  TA  : 0.9958
+  BF  : 0.6833
+  ST  : 0.6570
+  GM  : 0.5954
+  GL  : 0.6449
+  SM  : 0.6681
+  SL  : 0.8121
+  PL  : 0.7827
+  PB  : 0.8168
+
+Sweep table (k | global VAF | min per-muscle VAF | Frob err):
+  k=1  0.7413  0.2704  18.6548
+  k=2  0.8347  0.2749  14.9108
+  k=3  0.8924  0.3052  12.0290
+  k=4  0.9337  0.5954  9.4427
+  k=5  0.9556  0.6255  7.7260
+  k=6  0.9714  0.6242  6.2027
+  k=7  0.9821  0.6654  4.9127
+  k=8  0.9875  0.6914  4.1059

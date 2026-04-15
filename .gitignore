@@ -1,0 +1,59 @@
+# Raw Gait120 data (large, download manually from Figshare)
+# https://springernature.figshare.com/articles/dataset/27677016
+data/raw/
+Gait120_001_to_010/
+Gait120_011_to_020/
+*.zip
+*.mat
+
+# Processed data: keep small numpy arrays, ignore large intermediates
+data/processed/*.h5
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.venv/
+venv/
+env/
+build/
+dist/
+
+# Tooling caches
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# OS
+Thumbs.db
+
+# Claude Code local state (user-specific, not for public release)
+.claude/
+
+# Internal project docs (kept locally, not for public release)
+docs/
+
+# Local v1 backups (kept locally, not published)
+figures_v1_backup/
+results_v1_backup/
+
+# Pickle artifacts (use .npy for sharing; pickle allows arbitrary code execution)
+*.pkl
+*.pkl.bak
