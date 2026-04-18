@@ -197,9 +197,10 @@ step 4 matches Clark exactly).
    low-pass (4 Hz) Butterworth filter"*.
 5. **Per-subject amplitude normalization using Gait120 MVCs**.
    **Deviation #5 from Clark 2010**: Clark normalizes each muscle to
-   its *peak value from self-selected walking* (p.845). That approach
-   is unavailable here because the Gait120 dataset does not record
-   self-selected walking for the STS subjects. MVC-based normalization
+   its *peak value from self-selected walking* (p.845). Although
+   Gait120 does include level-walking data for these same subjects,
+   the current pipeline processes only the STS task and does not load
+   the walking trials for normalization purposes. MVC-based normalization
    is a principled adaptation: Gait120 provides per-muscle MVC
    recordings as a separate protocol, which gives an equally
    subject-invariant scale factor. An alternative peak-from-STS
@@ -435,7 +436,7 @@ pretraining.
   motor modules predicts reduced locomotor performance and muscle
   coordination complexity post-stroke. *J Neurophysiol* 2010;
   103:844–857.
-- Yang C, An Q, Kogami H, et al. Temporal features of muscle synergies
+- Yang N, An Q, Kogami H, et al. Temporal features of muscle synergies
   in sit-to-stand motion reflect the motor impairment of post-stroke
   patients. *IEEE Trans Neural Syst Rehabil Eng* 2019; 27(10):2118–2127.
 - Cheung VCK, Turolla A, Agostini M, et al. Muscle synergy patterns as
